@@ -1,0 +1,46 @@
+.headerListItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.headerListItem.active {
+  border: 1px solid white;
+  padding: 10px 20px;
+  border-radius: 25px;
+}
+.headerSearchItems {
+  gap: 10px;
+}
+.headerSearchText {
+  color: lightgray;
+  cursor: pointer;
+}
+.date {
+  position: absolute;
+  top: 50px;
+  z-index: 2;
+}
+.options {
+  position: absolute;
+  top: 70px;
+  right: 20%;
+  background-color: white;
+  color: gray;
+  border-radius: 5px;
+  padding: 10px 0px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  z-index: 2;
+}
+.optionItem {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+.optionCounter {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 15px;
+  color: black;
+}
