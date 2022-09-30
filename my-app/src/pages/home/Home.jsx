@@ -3,19 +3,13 @@ import Navbar from "../../Components/navbar/Navbar";
 import "./home.css";
 import Header from "../../Components/header/Header";
 
-import Footer from "../../Components/footer/Footer";
-import { Box, Flex, Heading, Text } from "@chakra-ui/react";
-import Offers from "../../Components/Offers";
-import FeaturedCities from "../../Components/featured/FeaturedCities";
-import PropertyList from "../../Components/propertList/PropertyList";
-import Cities from "../../Components/cities/Cities";
+
 
 const Home = () => {
   return (
     <div>
       <Navbar />
-      <Header />
-      <Flex
+
         className="homeContainer"
         mt="50px"
         direction="column"
@@ -36,9 +30,7 @@ const Home = () => {
         </Heading>
 
         <PropertyList />
-      </Flex>
-      <Cities />
-      <Footer />
+
     </div>
   );
 };

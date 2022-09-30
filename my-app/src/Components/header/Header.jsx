@@ -94,8 +94,7 @@ const Header = () => {
           left="15%"
           w="70%"
           m="auto"
-          color="white"
-          // border="1px solid white"
+
         >
           <Text fontSize="25px">Available until 3 Jan 2023</Text>
           <Heading as="h2" size="2xl" w="60%" lineHeight="65px">
