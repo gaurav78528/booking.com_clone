@@ -15,8 +15,8 @@ import { AiOutlineCar } from "react-icons/ai";
 import { BiTaxi, BiCalendar } from "react-icons/bi";
 import { ImUser } from "react-icons/im";
 import { DateRange } from "react-date-range";
-import "react-date-range/dist/styles.css"; // main css file
-import "react-date-range/dist/theme/default.css"; // theme css file
+import "react-date-range/dist/styles.css";
+import "react-date-range/dist/theme/default.css";
 import { format } from "date-fns";
 
 const Header = () => {
@@ -95,7 +95,7 @@ const Header = () => {
           w="70%"
           m="auto"
           color="white"
-          border="1px solid white"
+          // border="1px solid white"
         >
           <Text fontSize="25px">Available until 3 Jan 2023</Text>
           <Heading as="h2" size="2xl" w="60%" lineHeight="65px">
@@ -135,6 +135,7 @@ const Header = () => {
                 placeholder="Where are you going?"
                 size="md"
                 variant="unstyled"
+                color="black"
               />
             </Flex>
             <Flex className="headerSearchItems" align="center">

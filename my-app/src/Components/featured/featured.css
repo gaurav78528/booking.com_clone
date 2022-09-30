@@ -1,6 +1,8 @@
 .featured {
-  width: 100%;
-  max-width: 1024px;
+  width: 70%;
+  /* max-width: 1024px; */
+  margin: auto;
+
   display: flex;
   justify-content: space-between;
   gap: 20px;
@@ -8,11 +10,14 @@
 }
 .featuredItems {
   position: relative;
-   color: white;
-   border-radius: 10px;
-   overflow: hidden;
-   height: 250px;
-} 
+  color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  /* height: 250px; */
+}
+.featuredItems:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
 .featuredImg {
   width: 100%;
   object-fit: cover;
