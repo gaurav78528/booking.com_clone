@@ -4,23 +4,31 @@ import "./home.css";
 import Header from "../../Components/header/Header";
 
 
+
 const Home = () => {
   return (
     <div>
       <Navbar />
-       <Header />
 
         className="homeContainer"
         mt="50px"
         direction="column"
         align="center"
-        gap="30"
+        gap="3"
       >
-        <FeaturedCities />
-        <h1 className="homeTitle">Explore India</h1>
-        <p className="homeTitle">
+        <Offers />
+
+        <Heading as="h2" size="md" w="70%" mx="auto" mt="30px">
+          Explore India
+        </Heading>
+        <Text fontSize="md" w="70%" mx="auto" color="grey">
           These popular destinations have a lot to offer
-        </p>
+        </Text>
+        <FeaturedCities />
+        <Heading as="h4" size="lg" w="70%" mx="auto" mt="30px">
+          Browse by property type
+        </Heading>
+
         <PropertyList />
 
     </div>
