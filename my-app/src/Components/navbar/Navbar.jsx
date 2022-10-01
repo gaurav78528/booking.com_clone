@@ -1,7 +1,14 @@
 import React from "react";
 import "./navbar.css";
-import { Button, Flex, Box, Text } from "@chakra-ui/react";
+import { Button, Flex, Text } from "@chakra-ui/react";
+import { Navigate } from "react-router-dom";
+import Popup from "../../Modal/Popup";
 
+const handleClick = () => {
+  // <Navigate to="/register" />;
+  <Navigate to="/register" />;
+  // console.log("clicked");
+};
 const Navbar = () => {
   return (
     <Flex p="5" bg="#003580" justify="center">
@@ -15,7 +22,8 @@ const Navbar = () => {
         <Text fontSize="2xl" fontWeight="600">
           Booking.com
         </Text>
-        <Box className="navItems">
+        <Flex className="navItems" align="center">
+          <Popup />
           <Button
             colorScheme="blue"
             bg="#efecec"
@@ -23,6 +31,7 @@ const Navbar = () => {
             size="md"
             borderRadius="none"
             ml="3"
+            onClick={handleClick}
           >
             Register
           </Button>
@@ -36,9 +45,7 @@ const Navbar = () => {
           >
             Signin
           </Button>
-          {/* <button className="navButton">Register</button>
-          <button className="navButton">Login</button> */}
-        </Box>
+        </Flex>
       </Flex>
     </Flex>
   );

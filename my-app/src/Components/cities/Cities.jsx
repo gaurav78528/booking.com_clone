@@ -1,5 +1,5 @@
 import React from "react";
-import { Flex, Image, Heading, Text } from "@chakra-ui/react";
+import { Flex, Image, Heading } from "@chakra-ui/react";
 import "./cities.css";
 const Cities = () => {
   return (
