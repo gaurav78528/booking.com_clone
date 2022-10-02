@@ -15,7 +15,7 @@ import Navbar from "../../Components/navbar/Navbar";
 import { FcGoogle } from "react-icons/fc";
 import { FaFacebookSquare } from "react-icons/fa";
 import { BsPhone } from "react-icons/bs";
-import { Link, Navigate, useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Register = () => {
   const [user, setUser] = useState("");
@@ -28,12 +28,13 @@ const Register = () => {
     const userLogin = localStorage.getItem("registerData");
 
     if (user === userLogin) {
+      alert("Login Successfully.");
       navigate("/");
       return;
     }
 
     localStorage.setItem("registerData", user);
-    alert("user registered");
+    alert("Registered Successfully.");
   };
   // console.log(user);
   return (

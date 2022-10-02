@@ -56,7 +56,7 @@ const Header = () => {
           <Flex className="headerList" gap="10">
             <div className="headerListItem active">
               <IoBedOutline />
-              <span>Stays</span>
+              <Link to="/">Stays</Link>
             </div>
 
             <div className="headerListItem">
