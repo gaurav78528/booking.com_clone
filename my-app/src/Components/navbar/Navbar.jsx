@@ -1,14 +1,9 @@
 import React from "react";
 import "./navbar.css";
 import { Button, Flex, Text } from "@chakra-ui/react";
-import { Navigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Popup from "../../Modal/Popup";
 
-const handleClick = () => {
-  // <Navigate to="/register" />;
-  <Navigate to="/register" />;
-  // console.log("clicked");
-};
 const Navbar = () => {
   return (
     <Flex p="5" bg="#003580" justify="center">
@@ -31,9 +26,8 @@ const Navbar = () => {
             size="md"
             borderRadius="none"
             ml="3"
-            onClick={handleClick}
           >
-            Register
+            <Link to="/register">Register</Link>
           </Button>
           <Button
             colorScheme="blue"
@@ -43,7 +37,7 @@ const Navbar = () => {
             borderRadius="none"
             ml="3"
           >
-            Signin
+            <Link to="/register">Signin</Link>
           </Button>
         </Flex>
       </Flex>

@@ -10,13 +10,32 @@ import {
   Flex,
   Divider,
 } from "@chakra-ui/react";
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "../../Components/navbar/Navbar";
 import { FcGoogle } from "react-icons/fc";
 import { FaFacebookSquare } from "react-icons/fa";
 import { BsPhone } from "react-icons/bs";
-import { Link } from "react-router-dom";
+import { Link, Navigate, useNavigate } from "react-router-dom";
+
 const Register = () => {
+  const [user, setUser] = useState("");
+  const navigate = useNavigate();
+  const handleChange = (e) => {
+    setUser(e.target.value);
+    // console.log(user)
+  };
+  const handleClick = () => {
+    const userLogin = localStorage.getItem("registerData");
+
+    if (user === userLogin) {
+      navigate("/");
+      return;
+    }
+
+    localStorage.setItem("registerData", user);
+    alert("user registered");
+  };
+  // console.log(user);
   return (
     <>
       <Navbar />
@@ -34,6 +53,9 @@ const Register = () => {
               borderRadius="4px"
               focusBorderColor="gray"
               size="md"
+              onChange={handleChange}
+              name="email"
+              value={user}
             />
           </FormControl>
           <Button
@@ -44,6 +66,7 @@ const Register = () => {
             py="28px"
             my="20px"
             borderRadius="4px"
+            onClick={handleClick}
           >
             Continue with email
           </Button>

@@ -18,6 +18,7 @@ import { DateRange } from "react-date-range";
 import "react-date-range/dist/styles.css";
 import "react-date-range/dist/theme/default.css";
 import { format } from "date-fns";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [openDate, setOpenDate] = useState(false);
@@ -68,7 +69,7 @@ const Header = () => {
             </div>
             <div className="headerListItem">
               <AiOutlineCar />
-              <span>Car rentals</span>
+              <Link to="/car">Car rentals</Link>
             </div>
             <div className="headerListItem">
               <MdOutlineAttractions />
