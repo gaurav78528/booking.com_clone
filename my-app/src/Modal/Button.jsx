@@ -13,9 +13,10 @@ const CurrencyButton = ({ text, onOpen, isIcon }) => {
         marginRight: "10px",
         cursor: "pointer",
       }}
+      title="Choose your language"
     />
   ) : (
-    <Button onClick={onOpen} colorScheme="#003580">
+    <Button onClick={onOpen} colorScheme="#003580" title="Choose your currency">
       {text}
     </Button>
   );

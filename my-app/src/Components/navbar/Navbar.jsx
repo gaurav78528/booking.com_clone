@@ -3,6 +3,7 @@ import "./navbar.css";
 import { Button, Flex, Text } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import Popup from "../../Modal/Popup";
+import { BiHelpCircle } from "react-icons/bi";
 
 const Navbar = () => {
   return (
@@ -15,10 +16,15 @@ const Navbar = () => {
         justify="space-between"
       >
         <Text fontSize="2xl" fontWeight="600">
-          Booking.com
+          <Link to="/"> Booking.com</Link>
         </Text>
         <Flex className="navItems" align="center">
           <Popup />
+          <BiHelpCircle
+            fontSize="30px"
+            fontWeight="300"
+            title="Contact Customer Service"
+          />
           <Button
             colorScheme="blue"
             bg="#efecec"
