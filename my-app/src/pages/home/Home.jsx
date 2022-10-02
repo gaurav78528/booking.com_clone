@@ -13,12 +13,12 @@ import HomeGuests from "../../Components/homeGuests/HomeGuests";
 import MailList from "../../Components/mailList/MailList";
 
 
+
 const Home = () => {
   return (
     <div>
       <Navbar />
-      <Header />
-      <Flex
+
         className="homeContainer"
         mt="50px"
         direction="column"
@@ -39,12 +39,14 @@ const Home = () => {
         </Heading>
 
         <PropertyList />
+
       </Flex>
       <Cities />
 
       <HomeGuests />
       <MailList />
       <Footer />
+
     </div>
   );
 };
