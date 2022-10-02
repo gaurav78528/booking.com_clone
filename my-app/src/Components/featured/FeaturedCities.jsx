@@ -1,4 +1,4 @@
-import { Flex, Heading, Text } from "@chakra-ui/react";
+import { Heading, Text } from "@chakra-ui/react";
 import React from "react";
 import "./featured.css";
 import { cityData } from "../../data/cityData";

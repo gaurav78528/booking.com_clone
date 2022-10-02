@@ -1,6 +1,8 @@
 import React from "react";
 import "./navbar.css";
-import { Button, Flex, Box, Text } from "@chakra-ui/react";
+import { Button, Flex, Text } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
+import Popup from "../../Modal/Popup";
 
 const Navbar = () => {
   return (
@@ -15,7 +17,8 @@ const Navbar = () => {
         <Text fontSize="2xl" fontWeight="600">
           Booking.com
         </Text>
-        <Box className="navItems">
+        <Flex className="navItems" align="center">
+          <Popup />
           <Button
             colorScheme="blue"
             bg="#efecec"
@@ -24,7 +27,7 @@ const Navbar = () => {
             borderRadius="none"
             ml="3"
           >
-            Register
+            <Link to="/register">Register</Link>
           </Button>
           <Button
             colorScheme="blue"
@@ -34,11 +37,9 @@ const Navbar = () => {
             borderRadius="none"
             ml="3"
           >
-            Signin
+            <Link to="/register">Signin</Link>
           </Button>
-          {/* <button className="navButton">Register</button>
-          <button className="navButton">Login</button> */}
-        </Box>
+        </Flex>
       </Flex>
     </Flex>
   );

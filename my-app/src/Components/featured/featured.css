@@ -13,6 +13,7 @@
   color: white;
   border-radius: 10px;
   overflow: hidden;
+  cursor: pointer;
   /* height: 250px; */
 }
 .featuredItems:hover {

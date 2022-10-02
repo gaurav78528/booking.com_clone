@@ -1,7 +1,8 @@
-const homeGuests = [
+export const homeGuests = [
   {
     id: 1,
-    title: "6 Continents Apartments by Prague ResidencesOpens in new window",
+    title: "6 Continents Apartments by Prague",
+    city: "Rio de Janeiro",
     price: 7755,
     rating: 8.6,
     experience: "Fabulous",
@@ -11,7 +12,8 @@ const homeGuests = [
   },
   {
     id: 2,
-    title: "LivinParis - Luxury 3 Bedrooms Le Louvre I",
+    title: "Luxury 3 Bedrooms Le Louvre I",
+    city: "Split",
     price: 46145,
     rating: 8.2,
     experience: "Very good",
@@ -22,21 +24,24 @@ const homeGuests = [
   {
     id: 3,
     title: "Sun Spalato Views",
+    city: "Paris",
     price: 7755,
     rating: 8.6,
     experience: "Fabulous",
     reviews: 280,
     image:
-      "https://cf.bstatic.com/xdata/images/hotel/square600/123801934.webp?k=27073a18101dd5a4eefc76251f7d476be72e19ed03e98819f2d94667dd60f31a&o=&s=1",
+      "https://cf.bstatic.com/xdata/images/hotel/square600/48243413.webp?k=9b23033fee3e299379e91687caa48c3f3185c3d48258027105eb27440a12ec0f&o=&s=1",
   },
   {
     id: 4,
-    title: "6 Continents Apartments by Prague ResidencesOpens in new window",
-    price: 7755,
-    rating: 8.6,
-    experience: "Fabulous",
-    reviews: 280,
+    title: "Casa Portuguesa PrataOpens",
+    city: "Libson",
+    price: 18976,
+    rating: 8.5,
+    experience: "Very Good",
+    reviews: 48,
     image:
-      "https://cf.bstatic.com/xdata/images/hotel/square600/123801934.webp?k=27073a18101dd5a4eefc76251f7d476be72e19ed03e98819f2d94667dd60f31a&o=&s=1",
+      "https://cf.bstatic.com/xdata/images/hotel/square600/69813393.webp?k=f4baabb93cf1ac3b26aca4b505bcc0c0ddc90abe60bc28450e08c34e2090aec1&o=&s=1",
   },
 ];
+// homeGuests;
